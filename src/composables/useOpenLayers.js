@@ -38,8 +38,8 @@ export function useOpenLayers() {
     }), // mapquest layer
     new TileLayer({
       source: new TileWMS({
-        url: `${wmsBaseUrl}/geoserver/wmsproject/wms`,
-        params: { LAYERS: "wmsproject:countriesdbpedia", TILED: true },
+        url: `${wmsBaseUrl}/geoserver/project/wms`,
+        params: { LAYERS: "project:countriesdbpedia", TILED: true },
         serverType: "geoserver",
         transition: 0,
       }),
